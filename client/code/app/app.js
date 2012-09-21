@@ -17,5 +17,9 @@ ChatCtrl = function($scope) {
         });
         $scope.myMessage = '';
     };
+
+    $scope.now = function() {
+        return Date.now();
+    }
 }
 
