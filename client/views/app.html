@@ -31,9 +31,6 @@
             <h3 class="legend">Quick Chat Demo</h3>
             <h5>Open this page in multiple tabs or browsers and type a message below</h5>
 
-            <form ng-submit="postMessage()">
-                <input class="span10" type="text" ng-model="myMessage">
-            </form>
 
             <ul class="unstyled">
                 <li ng-repeat="message in messages">
@@ -41,6 +38,11 @@
                     <span class="pull-right">{{now() | date:'medium'}}</span>
                 </li>
             </ul>
+
+            <form ng-submit="postMessage()">
+                <input class="span10" type="text" ng-model="myMessage">
+            </form>
+
 
         </div>
         <div class="span1"></div>

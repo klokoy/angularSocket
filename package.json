@@ -6,6 +6,6 @@
   "private": true,
   "engines": { "node": ">= 0.6.0" },
   "dependencies": {
-    "socketstream": "0.3.x",
+    "socketstream": "0.3.x"
   }
 }
