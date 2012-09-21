@@ -1,0 +1,11 @@
+{
+  "name": "angularSocket",
+  "description": "An awesome real time application",
+  "version": "0.0.1",
+  "author": "Kim <kim.lokoy@gmail.com>",
+  "private": true,
+  "engines": { "node": ">= 0.6.0" },
+  "dependencies": {
+    "socketstream": "0.3.x",
+  }
+}
