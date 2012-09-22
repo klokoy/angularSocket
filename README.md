@@ -12,7 +12,7 @@ Then point your browser at http://localhost:3000/ .
 
 Screenshot:
 
-![angularSocket](/images/screenshot.png)
+![angularSocket](https://raw.github.com/klokoy/angularSocket/master/images/screenshot.png)
 
 The client app.js file:
 
