@@ -10,7 +10,7 @@ This install the dependencies. To start the server do:
 
 Then point your browser at http://localhost:3000/ .
 
-The app.js file:
+The client app.js file:
 
 ```javascript
 //Controller for the app
@@ -100,6 +100,5 @@ The app.html
 </body>
 </html>
 ```
-
 
 
