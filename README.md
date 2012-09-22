@@ -10,6 +10,10 @@ This install the dependencies. To start the server do:
 
 Then point your browser at http://localhost:3000/ .
 
+Screenshot:
+
+![Angular socketStream in harmony](/images/screenshot.png)
+
 The client app.js file:
 
 ```javascript
