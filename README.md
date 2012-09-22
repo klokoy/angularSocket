@@ -12,7 +12,7 @@ Then point your browser at http://localhost:3000/ .
 
 The angular app has only one simple controller ChatCtrl.
 
-´´´javascript
+```javascript
 ChatCtrl = function($scope) {
 
     $scope.messages = [];
@@ -36,7 +36,7 @@ ChatCtrl = function($scope) {
         return Date.now();
     }
 }
-´´´
+```
 
 
 
