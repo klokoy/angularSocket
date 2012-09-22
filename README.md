@@ -12,7 +12,7 @@ Then point your browser at http://localhost:3000/ .
 
 Screenshot:
 
-![Angular socketStream in harmony](/images/screenshot.png)
+![angularSocket](/images/screenshot.png)
 
 The client app.js file:
 
