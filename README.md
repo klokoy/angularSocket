@@ -26,12 +26,12 @@ ChatCtrl = function($scope) {
     //listen for new messages from the server, push them into the messages list
     //in the $apply function. This is necessary to update the list in the view.
     ss.event.on('newMessage', function(message) {
-        $scope.$apply($scope.messages.push(message));
+        $scope.$apply($scope.messages.push({text: message, time: Date.now()}));
     });
 
     //When new messages are posted from the form send them to the server.
     $scope.postMessage = function () {
-        ss.rpc('demo.sendMessage', $scope.myMessage,function (a) {
+        ss.rpc('demo.sendMessage', $scope.myMessage, function (a) {
             if(a) {
                 console.log('message posted!');
             } else {
@@ -40,11 +40,6 @@ ChatCtrl = function($scope) {
         });
         $scope.myMessage = '';
     };
-
-    //helper function to get the current date and time.
-    $scope.now = function() {
-        return Date.now();
-    }
 }
 ```
 
@@ -86,8 +81,8 @@ The app.html
 
             <ul class="unstyled">
                 <li ng-repeat="message in messages">
-                    <span>{{message}}</span>
-                    <span class="pull-right">{{now() | date:'medium'}}</span>
+                    <span>{{message.text}}</span>
+                    <span class="pull-right">{{message.time | date:'medium'}}</span>
                 </li>
             </ul>
 
