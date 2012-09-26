@@ -34,8 +34,8 @@
 
             <ul class="unstyled">
                 <li ng-repeat="message in messages">
-                    <span>{{message}}</span>
-                    <span class="pull-right">{{now() | date:'medium'}}</span>
+                    <span>{{message.text}}</span>
+                    <span class="pull-right">{{message.time | date:'medium'}}</span>
                 </li>
             </ul>
 
